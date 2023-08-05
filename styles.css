@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   background-color: rgb(38 40 56);
+}
+
+.container {
+    max-width: 70vw;
+    margin: 0 auto;
+    padding: 2vw;
+    background-color: rgb(44 47 84);
+    height: 100%;
+   
+    border-radius: 3vw;
+}
+
+.input-container {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin-left: 8vw;
+    margin-bottom: 3vw;
+}
+
+#cityInput{
+    font-size: 1vw;
+    width: 35vw;
+    height: 2.5vw;
+    background-color: rgb(44 47 84);
+    color: white;
+    /* border-style: none; */
+    border: 0.1vw solid #585884;
+    border-radius: 1.5vw;
+    text-indent: 1vw;
+}
+.head-title{
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3vw;
+}
+.input-container button {
+    padding: 0.7vw 1.6vw;
+    font-size: 1vw;
+    background-color: #6c5e96;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 7vw;
+    border-radius: 1.5vw;
+    transition: all 0.3s ease;
+}
+#addButton:hover{
+    scale: 1.03;
+}
+#weatherCards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* padding: 0px 15px 0px 70px; */
+}
+#cards{
+    
+    display: flex;
+    height: 11.4vw;
+    width: 22.3vw;
+    background-image: url(Images/Rectangle_1.png);
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0px 0px 4vw;
+}
+#cards:hover{
+    scale: 1.03;
+}
+#details{
+    width: 10vw;
+    top: 3vw;
+    position: relative;
+    height: 130px;
+    margin-left: 1.5vw;
+}
+#weather-type{
+    text-align: end;
+    margin: 0;
+    /* text-indent: 0px; */
+    margin-right: 3vw;
+    font-size: 1vw;
+}
+#wind{
+    font-size: 1vw;
+    color: #a8a8a8;
+}
+#temp{
+    font-size: 2vw;
+    margin: 0;
+}
+#weather-img{
+    width: 10vw;
+    height: 9vw;
+}
+#bg-color{
+    position: absolute;
+    color: blue;
+    height: 190px;
+    width: 300px;
+    background-color: bisque;
+}
+#city-cuntry{
+    font-size: 1.1vw;
+}
+@media (max-width: 1250px) {
+    #cards{
+        height: 14vw;
+    }
+  }
